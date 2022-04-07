@@ -1,0 +1,197 @@
+table {
+  border: 2px solid #ccc;
+  border-collapse: separate;
+  box-shadow: 0 3px 10px rgba(20, 114, 7, 0.2);
+  margin-bottom: 25px;
+  margin-top: 25px;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+  border-radius: 5px;
+  overflow-x: scroll;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: 0.5em 0 0.75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 0.35em;
+}
+table tr:hover {
+  background-color: #e5eaf3;
+}
+table th,
+table td {
+  padding: 0.625em;
+  word-wrap: break-word;
+
+  /* margin-right: 10px; */
+  /* text-align: center; */
+}
+
+table th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background-color: #0a2558;
+  color: #f8f8f8;
+  box-shadow: 0 3px 10px rgba(3, 186, 241, 0.2);
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 3px solid rgb(20, 7, 207);
+    display: block;
+    margin-bottom: 0.625em;
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+    word-wrap: break-word;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+.tbl_button {
+  transition-duration: 0.4s;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  background-color: transparent;
+  color: #e74c3c;
+  cursor: pointer;
+  align-self: center;
+  font-size: 1rem;
+  width: auto;
+  line-height: 1;
+  padding: 0.8em 1em;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin-left: 10px;
+  word-wrap: break-word;
+  white-space: normal;
+}
+.tbl_button_edit {
+  transition-duration: 0.4s;
+  border: 2px solid #034188;
+  border-radius: 0.6em;
+  background-color: transparent;
+  color: #fff;
+  background-color: #1397e9;
+  cursor: pointer;
+  align-self: center;
+  font-size: 1rem;
+  width: auto;
+  line-height: 1;
+  padding: 0.8em 1em;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin-left: 10px;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.tbl_button:hover {
+  box-shadow: 0 0 10px 0 #0a2558 inset, 0 0 10px 4px #3498db;
+}
+.tbl_button_edit:hover {
+  box-shadow: 0 0 10px 0 #0a2558 inset, 0 0 10px 4px #3498db;
+}
+.tbl_scroll {
+  overflow-x: scroll;
+  width: 100%;
+}
+
+.tbl_button_pending {
+  transition-duration: 0.4s;
+  border: 2px solid;
+  border-radius: 0.6em;
+  background-color: #e74c3c;
+  color: #fff;
+  align-self: center;
+  font-size: 1.3rem;
+  padding: 0.1em;
+  height: auto;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  white-space: normal;
+  word-wrap: break-word;
+}
+.tbl_button_processing {
+  transition-duration: 0.4s;
+  border: 2px solid;
+  border-radius: 0.6em;
+  background-color: #fc8d0f;
+  color: #fff;
+  width: 100%;
+  align-self: center;
+  font-size: 1.3rem;
+  padding: 0.1em;
+  height: auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  white-space: normal;
+  word-wrap: break-word;
+}
+.tbl_button_closed {
+  transition-duration: 0.4s;
+  border: 2px solid;
+  border-radius: 0.6em;
+  background-color: #2e8b57;
+  color: #fff;
+  align-self: center;
+  font-size: 1.3rem;
+  padding: 0.1em;
+  height: auto;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  white-space: normal;
+  word-wrap: break-word;
+}
